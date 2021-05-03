@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cubes.css">
 </head>
 <body>
 <div class="container page">
@@ -15,11 +16,11 @@
         <div class="col-md-6 col-print-6">
             <h1>Giuseppe Petrosino<br/>Computer Scientist &amp; Engineer</h1>
             <p>
-                <time datetime="" class="text-muted">Last update: May 3, 2021</time>
+                <time datetime="" class="text-muted">Last update: May 4, 2021</time>
             </p>
             <p>
                 <span class="screen"><a href="giuseppe-petrosino.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download PDF version</a></span>
-                <span class="print">Online version: <a href="https://ParsleyJ.github.io/mycv" class="text-nowrap"><i
+                <span class="print">Online version (with some more stuff): <a href="https://ParsleyJ.github.io/mycv" class="text-nowrap"><i
                     class="fa fa-github" aria-hidden="true"></i>https://ParsleyJ.github.io/mycv</a></span>
             </p>
         </div>
@@ -31,16 +32,24 @@
                 <dd class="col-md-9"><a href="mailto:parsleyjoe@gmail.com">parsleyjoe@gmail.com</a></dd>
                 <dt class="col-md-3">[text]</dt>
                 <dd class="col-md-9"><a href="https://t.me/parsleyjoe">Telegram</a></dd>
+                <dt class="col-md-3 screen">[cube]</dt>
+                <dd class="col-md-9 screen">
+                    <div class="cubes">
+                        <div class="loader">
+                            <div class="onplacebox revbox"></div>
+                        </div>
+                    </div>
+                </dd>
             </dl>
         </div>
     </div>
 
     <div class="print">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
 
     <div class="card mb-4">
@@ -296,6 +305,35 @@
         <div class="card-body">
             I used to compose electronic music a while ago, under the pseudonym Parsley Joe. <a
             href="https://www.youtube.com/watch?v=1JTqyTbnJMk">Listen</a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <h2>this.describe()</h2>
+    <div class="card mt-4">
+        <div class="card-body">
+            <div class="screen">
+                This page was created by an automated tool that I created with Node.
+                When I update the data and push it to the repo, this page and the PDF are automagically
+                generated.
+                Oh, and this is rendered by your browser from some <i>pure</i> CSS3 that I wrote:
+                <br>
+                <div class="cubes">
+                    <div class="loader">
+                        <div class="onplacebox"></div>
+                    </div>
+                </div>
+
+                <a href="https://github.com/ParsleyJ/mycv">[let me see the repo]</a>
+            </div>
+            <div class="print">
+                This PDF was created by an automated tool that I created with Node.
+                When I update the data and push it to the repo, this PDF and the online page are automagically
+                generated.
+                <a href="https://github.com/ParsleyJ/mycv">[let me see the repo]</a>
+            </div>
         </div>
     </div>
 

@@ -1,13 +1,9 @@
 module.exports = {
-  name: 'William Shakespeare',
-  title: 'Poet, playwright and actor',
+  name: 'Giuseppe Petrosino',
+  title: 'Computer Scientist & Engineer',
   facts: {
-    'Residence': 'London',
-    'Homepage': `<a href="https://en.wikipedia.org/wiki/William_Shakespeare">
-                  <span class="print">https://en.wikipedia.org/wiki/William_Shakespeare</span>
-                  <span class="screen">wiki</span>
-                </a>`,
-    'Email': '<a href="mailto:wil64@yahoo.com">wil64@yahoo.com</a>'
+    'home': 'Parma, Italy',
+    'mail me': '<a href="mailto:parsleyjoe@gmail.com">parsleyjoe@gmail.com</a>'
   },
   skills: [
     ['Comedy', '++++'],
@@ -23,7 +19,7 @@ module.exports = {
     ['Literature', '++++'],
     ['Influence', '++++'],
   ],
-  plays: [
+  research: [
     {
       title: 'Hamlet',
       written: 'Likely early 17th century',

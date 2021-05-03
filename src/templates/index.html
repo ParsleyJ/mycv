@@ -55,25 +55,19 @@
     <br>
     <br>
 
-    <h2>Experience</h2>
-    {{#each experience}}
+    <h2>Education</h2>
     <div class="card mt-4">
         <div class="card-body">
-            <div class="mb-2"><strong>{{ header }}</strong></div>
-
-            {{{markdown contents }}}
-
-            <div>
-                {{#each skills }}
-                <span class="badge badge-primary">{{ this }}</span>
-                {{/each}}
-            </div>
+            {{#each education}}
+            <p> - {{ title }} @ {{ at }}</p>
+            {{/each}}
         </div>
     </div>
-    {{/each}}
 
     <br>
     <br>
+    <br>
+
 
     <h2>Research Projects</h2>
     <br>
@@ -115,14 +109,22 @@
     <br>
     <br>
 
-    <h2>Education</h2>
+    <h2>Experience</h2>
+    {{#each experience}}
     <div class="card mt-4">
         <div class="card-body">
-            {{#each education}}
-            <p> - {{ title }} @ {{ at }}</p>
-            {{/each}}
+            <div class="mb-2"><strong>{{ header }}</strong></div>
+
+            {{{markdown contents }}}
+
+            <div>
+                {{#each skills }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
         </div>
     </div>
+    {{/each}}
 
     <br>
     <br>

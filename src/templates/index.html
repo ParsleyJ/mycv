@@ -26,49 +26,36 @@
         <div class="col-md-6 col-print-6">
             <dl class="row">
                 {{#each facts}}
-                <dt class="col-md-3">{{ @key }}</dt>
+                <dt class="col-md-3">[{{ @key }}]</dt>
                 <dd class="col-md-9">{{{ this }}}</dd>
                 {{/each}}
             </dl>
         </div>
     </div>
 
-    <h3 class="screen">What I use / love to work with</h3>
-    <div class="row mb-4">
-        {{#each skills}}
-        <div class="col-print-1 col-3 col-md-2 col-lg-1 text-right">
-            <small>{{ this.[0] }}</small>
-        </div>
-        <div class="col-print-1 col-3 col-md-2 col-lg-1">
-            {{ this.[1] }}
-        </div>
-        {{/each}}
+    <div class="print">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     </div>
 
-    <p>
-        {{ descr }}
-    </p>
-
-    <h2>Research Projects</h2>
-    {{#each research}}
     <div class="card mb-4">
         <div class="card-body">
-            <h3>{{ title }}</h3>
-            <p class="text-muted">{{ written }}</p>
-
-            {{{markdown contents }}}
-
+            <h2 class="print">What I use / love to work with</h2>
             <div>
-                {{#each badges }}
+                {{#each skills}}
                 <span class="badge badge-primary">{{ this }}</span>
                 {{/each}}
             </div>
         </div>
     </div>
-    {{/each}}
 
-    <h2>Additional Experience</h2>
+    <br>
+    <br>
 
+    <h2>Experience</h2>
     {{#each experience}}
     <div class="card mt-4">
         <div class="card-body">
@@ -85,24 +72,104 @@
     </div>
     {{/each}}
 
-    <h2>Publications</h2>
+    <br>
+    <br>
 
-    {{#each papers}}
-    <div class="card mt-4">
+    <h2>Research Projects</h2>
+    <br>
+    {{#each research}}
+    <div class="card mb-4">
         <div class="card-body">
-            <div class="mb-2"><strong>{{ title }}</strong></div>
-            <div class="mb-2">{{ authors }} - {{ when }}</div>
+            <h3>{{ title }}</h3>
+            <p class="text-muted">{{ written }}</p>
 
-            {{{markdown meta }}}
+            <div class="text-justified">{{{markdown contents }}}</div>
+
+            <div>
+                {{#each badges }}
+                <span class="badge badge-primary">{{ this }}</span>
+                {{/each}}
+            </div>
         </div>
     </div>
     {{/each}}
 
-    <h2>Education</h2>
-    <p>M.Sc. in Computer Engineering (<i>cum laude</i>) @ University of Parma (Academic Year 2019-20)</p>
-    <p>B.Sc. in Computer Science @ University of Parma (Academic Year 2017-18)</p>
-    <p>High School Diploma (<i>Maturità Scientifica</i>) @ Liceo Publio Virgilio Marone (Vico del Gargano) (School Year 2011-12)</p>
+    <br>
 
+    <h2>Publications</h2>
+    <div class="card mt-4">
+        <div class="card-body">
+            <ul>
+                {{#each papers}}
+                <li>
+                    <div class="mb-2"><strong>{{ title }}</strong></div>
+                    <div class="mb-2">{{ authors }} - {{ when }}</div>
+
+                    {{{markdown meta }}}
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <h2>Education</h2>
+    <div class="card mt-4">
+        <div class="card-body">
+            {{#each education}}
+            <p> - {{ title }} @ {{ at }}</p>
+            {{/each}}
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="screen">
+        <h2>Other personal CS Projects</h2>
+        {{#each otherProjects}}
+        <div class="card mb-4">
+            <div class="card-body">
+                <h3>{{ title }}</h3>
+                <p class="text-muted">{{ when }} - <a href="{{ url }}"><i
+                    class="fa fa-github" aria-hidden="true"></i>GitHub repo</a></p>
+
+                <div class="text-justified">{{{markdown content }}}</div>
+
+
+                <div class="screen autoimg">{{{markdown media}}}</div>
+                <div>
+                    {{#each badges }}
+                    <span class="badge badge-primary">{{ this }}</span>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+    <br>
+
+
+    <h2>Last book I read</h2>
+    <div class="card mt-4">
+        <div class="card-body">
+            <p> => {{{ lastBook.title }}} by {{{ lastBook.by }}}</p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <h2>Hobbies</h2>
+    <div class="card mt-4">
+        <div class="card-body">
+            I used to compose electronic music a while ago, under the pseudonym Parsley Joe. <a
+            href="https://www.youtube.com/watch?v=1JTqyTbnJMk">Listen</a>
+        </div>
+    </div>
 
 </div>
 </body>

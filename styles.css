@@ -1,5 +1,45 @@
+@font-face {
+    font-family: 'jetbrains_monomedium';
+    src: url('jetbrainsmono-medium-webfont.eot');
+    src: url('jetbrainsmono-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('jetbrainsmono-medium-webfont.woff2') format('woff2'),
+    url('jetbrainsmono-medium-webfont.woff') format('woff'),
+    url('jetbrainsmono-medium-webfont.ttf') format('truetype'),
+    url('jetbrainsmono-medium-webfont.svg#jetbrains_monomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    font-family: "jetbrains_monomedium", serif;
+    background-color: #181818;
+}
+
+
+.text-justified{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.badge-primary{
+    background-color: #4dbb0c;
+}
+
+a {
+    color: #4dbb0c
+}
+
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
 @media print {
     body {
+        background-color: #ffffff;
         font-size: 19px;
     }
 
@@ -23,6 +63,12 @@
         color: inherit;
         background-color: inherit;
     }
+
+
+}
+
+.text-muted2 {
+    color: #898989 !important;
 }
 
 @media not print {
@@ -32,9 +78,10 @@
 
     @media (min-width: 576px) {
         .page {
+            background-color: white;
             margin-top: 10px;
             margin-bottom: 10px;
-            box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.75);
+            box-shadow: 1px 1px 10px 0 #4dbb0cff;
             position: relative;
             padding: 32px;
         }

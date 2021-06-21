@@ -4,7 +4,8 @@ module.exports = {
   facts: {
     'home': 'Parma, Italy',
     'mail': '<a href="mailto:parsleyjoe@gmail.com">parsleyjoe@gmail.com</a>',
-    'text': '<a href="https://t.me/parsleyjoe">Telegram</a>'
+    'text': '<a href="https://t.me/parsleyjoe">Telegram</a>',
+    'call': '<a href="https://join.skype.com/invite/nBuUFnbhZUKq">Skype</a>'
   },
   skills: [
     'Kotlin',

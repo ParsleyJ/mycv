@@ -153,7 +153,7 @@ module.exports = {
       title:'LogKomoTiv',
       when:'September 2020',
       badges: ['Logic Programming', 'Kotlin', 'DSL'],
-      content:'A Kotlin Multiplatform Logic Programming DSL Library, which allows to write logic-programming-style declarative rules and query a knowledge base, directly in Kotlin. Since it\'s _pure_ Kotlin, it can be used as common library in a Multiplatform project, so it can used it on the JVM, on Android, compiled to binary code, executed in the browser.',
+      content:'A Kotlin Multiplatform Logic Programming DSL Library, which allows to write logic-programming-style declarative rules and query a knowledge base, directly in Kotlin. Since it\'s _pure_ Kotlin, it can be used as common library in a Multiplatform project, so it can be used on the JVM, on Android, compiled to binary code, executed in the browser.',
       media:'',
       url:'https://github.com/ParsleyJ/LogKomoTiv'
     },

@@ -21,7 +21,7 @@ module.exports = {
       title: 'Jadescript',
       written: '2017 - now',
       badges: ['Agent-Oriented Programming', 'Programming Language Design', 'Java', 'Xtext'],
-      contents: 'Jadescript is a novel programming language for _Multi Agent Systems_ (MASs) development for the [JADE Platform](https://jade.tilab.com/). Started in collaboration with [AI Lab](https://www.ailab.unipr.it) of University of Parma, this project aims to design an agent-oriented programming language. It also contemplates the implementation of a set of tools built in Java and the Xtext Framework to ease the development in this new language. This set of tools includes a compiler and an Eclipse IDE plugin. The language provides a new way of programming easily scalable, performant and intelligent distributed systems by encouraging the use of the behavioral agent model of computation, which defines a new paradigm to realize event-driven programming with asynchronous communication and naming/location transparency of processing nodes. The language is enriched by some advanced features like declarative pattern matching, expression type and variable declaration inferring, flow-sensitive typing, semantically relevant whitespace parsing _à la Python_.'
+      contents: 'Jadescript is a novel programming language for _Multi Agent Systems_ (MASs) development for the [JADE Platform](https://jade.tilab.com/). Started with [AI Lab](https://www.ailab.unipr.it) of University of Parma, this project aims to design an agent-oriented programming language. It includes the implementation of a set of tools built in Java and the Xtext Framework, which comprises a compiler and an Eclipse IDE plugin. The language provides a new way of programming easily scalable, performant and intelligent distributed systems by encouraging the use of the behavioral agent model of computation, which defines a new paradigm to achieve event-driven programming with asynchronous communication and naming/location transparency of processing nodes. The language is syntactically strongly inspired by agent pseudocode, and it is enriched by some advanced features like declarative pattern matching, expression type and variable declaration inferring, semantically relevant whitespace parsing _à la Python_.'
     },
     {
       title: 'ActoDatA',
@@ -42,7 +42,7 @@ module.exports = {
       contents: 'mar 2021 - now'
     },
     {
-      header: 'Department student Tutor for "Programming Fundamentals A+B" and "Algorithms and Data Structures 1" @ Dpt. of Mathematical, Physical and Computer Sciences',
+      header: 'Student Tutor for "Programming Fundamentals A+B" and "Algorithms and Data Structures 1" @ Dpt. of Mathematical, Physical and Computer Sciences',
       contents: '4 semesters, 2018 - 2020'
     },
   ],
@@ -96,21 +96,47 @@ module.exports = {
       meta: '_CEUR Workshop Proceedings_'
     },
   ],
+  conferences:[
+    {
+      name: "Workshop From Objects to Agents (WOA 2018)",
+      where: "Palermo",
+      when: "June 28th-29th, 2018",
+      speechtitle: "Overview of a Scripting Language for JADE-Based Multi-Agent Systems"
+    },
+    {
+      name: "AI*IA 2018",
+      where: "Trento",
+      when: "November 20th-23rd, 2018",
+      speechtitle: "An Introduction to the Major Features of a Scripting Language for JADE Agents"
+    },
+    {
+      name: "Workshop From Objects to Agents (WOA 2019)",
+      where: "Parma",
+      when: "June 26th-28th, 2019",
+      speechtitle: "Extending Message Handlers with Pattern Matching in the Jadescript Programming Language"
+    },
+    {
+      name: "GECCO 2021",
+      where: "Lille",
+      when: "July 10th-14th 2021",
+      speechtitle: "Island Model in ActoDatA: an actor-based Implementation of a classical Distributed Evolutionary Computation Paradigm"
+    },
+  ],
   education:[
     {
       // language=Markdown
       title: 'M.Sc. in Computer Engineering (cum laude)',
-      at: 'University of Parma (Academic Year 2019-20)'
+      at: 'University of Parma, Parma, Italy (Academic Year 2019-20)'
     },
     {
       // language=Markdown
       title: 'B.Sc. in Computer Science',
-      at: 'University of Parma (Academic Year 2017-18)'
+      at: 'University of Parma, Parma, Italy (Academic Year 2017-18)'
     },
     {
       // language=Markdown
       title: 'High School Diploma (Maturità Scientifica)',
-      at: 'Liceo Publio Virgilio Marone (Vico del Gargano) (School Year 2011-12)'
+      at: 'Liceo Publio Virgilio Marone (Vico del Gargano, Italy) (School Year 2011-12)'
     }
   ],
   otherProjects:[
@@ -147,9 +173,11 @@ module.exports = {
       url:'https://github.com/ParsleyJ/CLIptic'
     }
   ],
-  lastBook:{
+  lastBooks:[{
     title:'Why Everyone (else) Is a Hypocrite',
     by:'Robert Kurzban',
-    summary:'The author advances the theory of the _modular mind_, i.e., human minds are made of concurrent and, sometimes, conflicting modules that are evolved to efficiently fulfill very simple tasks. He provides a series of anecdotes based on studies in evolutionary psychology, and argues that if we think our mind as an administration team, then the parts of our brain that we _feel_ as _our selves_ are more similar to a Press Secretary than to a President.'
-  }
+  }, {
+    title:'Twenty Thousand Leagues Under the Seas',
+    by:'Jules Verne',
+  }]
 };

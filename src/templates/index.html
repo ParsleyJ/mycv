@@ -20,7 +20,8 @@
             </p>
             <p>
                 <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download PDF version</a></span>
-                <span class="print">Online version (with some more stuff): <a href="{{ baseUrl }}" class="text-nowrap"><i
+                <span class="print">Online version (with some more stuff): <a href="{{ baseUrl }}"
+                                                                              class="text-nowrap"><i
                     class="fa fa-github" aria-hidden="true"></i>{{ baseUrl }}</a></span>
             </p>
         </div>
@@ -118,6 +119,24 @@
     <br>
     <br>
 
+    <h2>Conference Presentations</h2>
+    <div class="card mt-4">
+        <div class="card-body">
+            {{#each conferences}}
+            <p>
+                <b>{{ name }}</b>
+                <br>
+                {{ where }}, {{ when }}
+                <br>
+                Title: <i>{{ speechtitle }}</i>
+            </p>
+            {{/each}}
+        </div>
+    </div>
+
+    <br>
+    <br>
+
     <h2>Experience</h2>
     {{#each experience}}
     <div class="card mt-4">
@@ -164,10 +183,12 @@
     <br>
 
 
-    <h2>Last book I read</h2>
+    <h2>The books I'm reading right now</h2>
     <div class="card mt-4">
         <div class="card-body">
-            <p> => {{{ lastBook.title }}} by {{{ lastBook.by }}}</p>
+            {{#each lastBooks}}
+            <p> => <i>{{ title }}</i> by {{ by }}</p>
+            {{/each}}
         </div>
     </div>
 
@@ -177,8 +198,9 @@
     <h2>Hobbies</h2>
     <div class="card mt-4">
         <div class="card-body">
-            I used to compose electronic music a while ago, under the pseudonym Parsley Joe. <a
-            href="https://www.youtube.com/watch?v=1JTqyTbnJMk">Listen</a>
+            I used to compose electronic music a while ago, under the pseudonym Parsley Joe. <br> <a
+            href="https://www.youtube.com/watch?v=1JTqyTbnJMk"><i
+            class="fa fa-youtube" aria-hidden="true"></i>Listen</a>
         </div>
     </div>
 

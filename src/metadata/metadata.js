@@ -126,6 +126,10 @@ module.exports = {
   ],
   education:[
     {
+      title: 'PhD Candidate in Industriual Innovation Engineering',
+      at: 'University of Modena and Reggio Emilia, Italy, (XVIII cycle, 2021 - now)'
+    },
+    {
       // language=Markdown
       title: 'M.Sc. in Computer Engineering (cum laude)',
       at: 'University of Parma, Parma, Italy (Academic Year 2019-20)'
@@ -176,10 +180,10 @@ module.exports = {
     }
   ],
   lastBooks:[{
+    title:'Godel, Escher, Bach: An Eternal Golden Braid',
+    by: 'Douglas Hofstadter',
+  },{
     title:'Why Everyone (else) Is a Hypocrite',
     by:'Robert Kurzban',
-  }, {
-    title:'Twenty Thousand Leagues Under the Seas',
-    by:'Jules Verne',
   }]
 };

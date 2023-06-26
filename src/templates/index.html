@@ -85,7 +85,8 @@
     <div class="card mb-4">
         <div class="card-body">
             <h3>{{ title }}</h3>
-            <p class="text-muted">{{ written }}</p>
+            <p class="text-muted">{{ written }} {{#if url}}<br><a href="{{ url }}"><i
+                    class="fa fa-github" aria-hidden="true"></i>GitHub repo</a>{{/if}} </p>
 
             <div class="text-justified">{{{markdown contents }}}</div>
 
